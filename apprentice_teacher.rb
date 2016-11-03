@@ -3,11 +3,6 @@ require_relative 'highfive'
 
 class ApprenticeTeacher < Teacher
 
-  def initialize(options={})
-    super
-    @raise_rating = 80
-  end
-
   include HighFive
 
   def teach_stuff

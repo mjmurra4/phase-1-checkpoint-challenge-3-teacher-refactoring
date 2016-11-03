@@ -7,6 +7,7 @@ class Teacher
     @name = options.fetch(:name, "")
     @target_raise = 800
     @phase = 3
+    @raise_rating = 80
   end
 
   def set_phase(num)
@@ -35,5 +36,14 @@ class Teacher
     end
     response
   end
+
+  def teach_stuff
+    response = ""
+    response += "Listen, class, this is how everything works" + @swag
+    response += "*drops crazy knowledge bomb* "
+    response += "... You're welcome." + @saunter
+    response
+  end
+
 
 end
